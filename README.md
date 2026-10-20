@@ -1,32 +1,19 @@
-<!--
-╔══════════════════════════════════════════════════════════════════════╗
-║  这是 GitHub Profile README，不是普通 README。                        ║
-║                                                                      ║
-║  生效条件（两个都必须满足）：                                          ║
-║    1. 仓库名必须【逐字】等于 GitHub 用户名：InariNGT-Ofiicial          ║
-║       （大小写敏感，注意 Ofiicial 里有两个 i）                          ║
-║    2. 仓库必须为 Public                                              ║
-║                                                                      ║
-║  生效后，本文件内容会渲染在 github.com/InariNGT-Ofiicial 的第一屏。    ║
-╚══════════════════════════════════════════════════════════════════════╝
+<div align="center">
 
-★ 带【待填写】标记的地方，是刻意留空的个人信息位。
-  我没有编造任何关于您的个人信息——请自行替换或整行删除。
--->
+<img src="./assets/banner.svg" alt="InariNGT — 用 vibe coding 的速度，造可复现的产物" width="100%" />
 
-# 你好，我是 InariNGT 
+</div>
 
-**用 vibe coding 的速度，造可复现的产物。**
+**我关心的问题很具体：同一条链跑第二遍，能不能得到同样的东西。**
 
-我关心的问题很具体：同一条链跑第二遍，能不能得到同样的东西。
+写代码可以很快，但「快」不该以「下次跑出别的结果」为代价。所以我做的项目大多在同一个方向上——
+把创作过程拆成**确定的编译链**：输入定了，输出就该定，改一版不是重做一遍，而是重跑一次。
 
-**AVG / 视觉小说 · 计算机视觉 · 程序化生成**
-
-*I vibe-code for speed, but I aim at artifacts that reproduce — same input, same output, every time.*
+<sub>*I vibe-code for speed, but I aim at artifacts that reproduce — same input, same output, every time.*</sub>
 
 ---
 
-## 🔧 在造的东西
+## 🔧 编译链：把创作变成可重跑的产物
 
 ### [webgal-screenplay-compiler](https://github.com/InariNGT-Ofiicial/webgal-screenplay-compiler)
 
@@ -42,7 +29,22 @@
 
 `Python` · `MIT` · 1280×720 / 24fps · 琥珀荧光屏 TUI 风格 · 零外部图像素材
 
-没有素材库，没有逐帧手调。给定 `t`，画面就是确定的——这让「改一版」从「重做一遍」变成「重跑一次」。
+没有素材库，没有逐帧手调。给定 `t`，画面就是确定的——这让「改一版」从「重做一遍」变成「重跑一次」。上面那张 banner 的波形，就是这套审美的延伸。
+
+---
+
+## 🎙 语音与内容管线
+
+在 DSH 宿主里跑的一组工具，把「声音」和「内容」也当作可复现的管线来处理。
+
+| 项目 | 做什么 |
+|:--|:--|
+| [`dsh-anime-voice`](https://github.com/InariNGT-Ofiicial/dsh-anime-voice)<br><sub>Python</sub> | 番剧角色台词提取 → GPT-SoVITS v2 训练配音，含宿主实测记录 |
+| [`dsh-train-pipeline`](https://github.com/InariNGT-Ofiicial/dsh-train-pipeline)<br><sub>JavaScript</sub> | 本地语音数据集、DDSP Reflow 训练、翻唱管线声线注册；Yoshino demo checkpoint 在 Releases |
+| [`dsh-cover-pipeline`](https://github.com/InariNGT-Ofiicial/dsh-cover-pipeline)<br><sub>JavaScript</sub> | AI 翻唱管线的落地实现，与上面的训练链配套 |
+| [`dsh-bili-humanism`](https://github.com/InariNGT-Ofiicial/dsh-bili-humanism)<br><sub>JavaScript · MIT</sub> | B站内容学习：分层取稿 → 证据化理解 → 可修正记忆 → 本地交付。历史/收藏/点赞/投币为人类独立开关，默认全关 |
+
+<sub>授权说明：`dsh-anime-voice` 尚未声明 license，两个 pipeline 仓库标记为 `NOASSERTION`。想复用请先开 issue 问一句。</sub>
 
 ---
 
@@ -58,33 +60,8 @@
 
 凡是**「输入确定就该输出确定」**的地方，我都有兴趣把它做成可复现的。
 
-<!-- 【待填写】保持更新是 profile README 唯一真正需要维护的部分。
-     每季度改一次这一节，比堆任何徽章都有用。 -->
-
 ---
 
 ## 📫 联系
 
 对哪个项目有想法、或者发现 bug，欢迎直接到对应的仓库开 issue。
-
-<!-- 【待填写】想公开邮箱 / B站 / 作品页时，在这里补一行链接。
-     注意：不要留空链接或占位符 —— 空链接比不写更糟。 -->
-
----
-
-<!--
-=== 设计说明（发布后本段可删）===
-
-刻意选择「干净」而非「花哨」，理由：
-
-1. 本 README 的说服力来自「严肃」——两个项目都在讲设计取舍与工程宣言
-   （「为什么不在运行时让模型现写」「每一帧都是 t 的纯函数」）。
-   徽章墙、贪吃蛇、打字机动画会稀释这种信号。
-2. 英文招聘方视角的指南一致把「徽章墙 / 统计卡片 / 贪吃蛇」列为
-   「读起来像新人」的反模式；中文社区则普遍推荐它们。
-   本 README 取「首屏从严」：信息效率优先。
-3. 若日后想加入趣味元素（统计卡片等），建议下沉到折叠区
-   （<details> 标签），别放首屏。
-
-详见同目录《GitHub维护与优化研究报告》第四节「分歧怎么裁决」。
--->
