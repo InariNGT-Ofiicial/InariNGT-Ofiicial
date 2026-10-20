@@ -37,12 +37,14 @@
 
 在 DSH 宿主里跑的一组工具，把「声音」和「内容」也当作可复现的管线来处理。
 
-| 项目 | 做什么 |
-|:--|:--|
-| [`dsh-anime-voice`](https://github.com/InariNGT-Ofiicial/dsh-anime-voice)<br><sub>Python</sub> | 番剧角色台词提取 → GPT-SoVITS v2 训练配音，含宿主实测记录 |
-| [`dsh-train-pipeline`](https://github.com/InariNGT-Ofiicial/dsh-train-pipeline)<br><sub>JavaScript</sub> | 本地语音数据集、DDSP Reflow 训练、翻唱管线声线注册；Yoshino demo checkpoint 在 Releases |
-| [`dsh-cover-pipeline`](https://github.com/InariNGT-Ofiicial/dsh-cover-pipeline)<br><sub>JavaScript</sub> | AI 翻唱管线的落地实现，与上面的训练链配套 |
-| [`dsh-bili-humanism`](https://github.com/InariNGT-Ofiicial/dsh-bili-humanism)<br><sub>JavaScript · MIT</sub> | B站内容学习：分层取稿 → 证据化理解 → 可修正记忆 → 本地交付。历史/收藏/点赞/投币为人类独立开关，默认全关 |
+- **[`dsh-anime-voice`](https://github.com/InariNGT-Ofiicial/dsh-anime-voice)** · `Python`
+  番剧角色台词提取 → GPT-SoVITS v2 训练配音，含宿主实测记录
+- **[`dsh-train-pipeline`](https://github.com/InariNGT-Ofiicial/dsh-train-pipeline)** · `JavaScript`
+  本地语音数据集、DDSP Reflow 训练、翻唱管线声线注册；Yoshino demo checkpoint 在 Releases
+- **[`dsh-cover-pipeline`](https://github.com/InariNGT-Ofiicial/dsh-cover-pipeline)** · `JavaScript`
+  AI 翻唱管线的落地实现，与上面的训练链配套
+- **[`dsh-bili-humanism`](https://github.com/InariNGT-Ofiicial/dsh-bili-humanism)** · `JavaScript` · `MIT`
+  B站内容学习：分层取稿 → 证据化理解 → 可修正记忆 → 本地交付。历史/收藏/点赞/投币为人类独立开关，默认全关
 
 <sub>授权说明：`dsh-anime-voice` 尚未声明 license，两个 pipeline 仓库标记为 `NOASSERTION`。想复用请先开 issue 问一句。</sub>
 
@@ -65,3 +67,5 @@
 ## 📫 联系
 
 对哪个项目有想法、或者发现 bug，欢迎直接到对应的仓库开 issue。
+
+也可以在 [B站](https://space.bilibili.com/10943127) 找到我。
