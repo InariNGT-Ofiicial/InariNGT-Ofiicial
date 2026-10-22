@@ -64,4 +64,4 @@
 
 对哪个项目有想法、或者发现 bug，欢迎直接到对应的仓库开 issue。
 
-也可以在 [B站](https://space.bilibili.com/10943127) 找到我。
+也可以在 [B站](https://space.bilibili.com/109431227) 找到我。
